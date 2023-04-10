@@ -29,6 +29,10 @@ span {
     padding: 5px;
 }
 
+#left-side, #right-side {
+    cursor: pointer;
+}
+
 #copy-button {
     display: block;
     margin: auto;
