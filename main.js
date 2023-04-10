@@ -43,8 +43,7 @@ const pickColor = () => {
     copyButton.addEventListener("click", () => {
       navigator.clipboard.writeText(gradientValue)
         .then(() => {
-          // Alert the user that the gradient was copied successfully
-          alert("Gradient copied to clipboard successfully!");
+          console.log("Gradient copied to clipboard successfully!");
         })
         .catch((error) => {
           // Log any errors to the console
