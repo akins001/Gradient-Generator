@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(to right, yellow, red);
+}
+
+#control-panel {
+    position: fixed;
+    padding: 2px 5px 2px 5px;
+    margin: auto;
+    bottom: 4%;
+    width: 95%;
+    height: 7%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.input-right {
+    margin-left: auto;
+}
+
+.input-left {
+    margin-right: 15px;
+}
+
+span {
+    color: whitesmoke;
+    border-radius: 3px;
+    background-color: black;
+    margin: 5px;
+    padding: 5px;
+}
+
+#copy-button {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #0e1e30;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#copy-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries for different screen sizes */
+
+@media (max-width: 768px) {
+    /* Adjust the control panel height for smaller screens */
+    #control-panel {
+        height: 10%;
+    }
+
+    /* Adjust the font size of the input labels for smaller screens */
+    .input-left label, .input-right label {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust the control panel height and font size for even smaller screens */
+    #control-panel {
+        height: 15%;
+    }
+
+    .input-left label, .input-right label {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    /* Adjust the control panel height and font size for the smallest screens */
+    #control-panel {
+        height: 20%;
+    }
+
+    .input-left label, .input-right label {
+        font-size: 10px;
+    }
+}

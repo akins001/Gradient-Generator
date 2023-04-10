@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Control panel for selecting colors -->
+    <div id="control-panel">
+        <div class="input-left">
+            <!-- Input for selecting the color of the left side of the gradient -->
+            Select color for Left Side: <input oninput="pickColor()" id="left-side" type="color" value="#ffff00">
+            <!-- Display the selected color value for the left side -->
+            <span id="leftColorValue"></span>
+        </div>
+        <div class="input-right">
+            <!-- Input for selecting the color of the right side of the gradient -->
+            Select color for Right Side: <input oninput="pickColor()" id="right-side" type="color" value="#ff0000">
+            <!-- Display the selected color value for the right side -->
+            <span id="rightColorValue"></span>
+        </div>
+    </div>
+    <!-- Button for copying the gradient -->
+    <button id="copy-button">Copy Gradient</button>
+    <!-- Include the JavaScript file -->
+    <script src="main.js"></script>
+</body>
+</html>
